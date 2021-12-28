@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/7cb73e3c6e.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <title>Just Dance Academy</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Just Dance</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">Dance Forms</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="">Contemporary</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="#">Hip-Hop</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="#">Ballet</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="#">Salsa</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn signup" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SignUP Modal -->
+
+  <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="signupLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupLabel">Create your Just Dance Account </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"> Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I accept all terms and conditions.</label>
+            </div>
+            <button id="click" onclick="clicked()" type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel -->
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Dance18.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" data-aos="fade-up">
+          <h2 class="pps">Welcome to Just Dance Academy</h2>
+          <h5 class="pt-3 bp"><span class="auto-input"></span></h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Dance13.jpg" class="d-block w-100 blr" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="pps">Dance your Soul away</h2>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Dance16.jpg" class="d-block w-100 blr" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="pps">Feel the Rhythm</h2>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!--  Blog items  -->
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-2 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-4 text-primary">Dance Style</strong>
+            <h3 class="mb-1 fnt">Salsa</h3>
+            <p class=" card-text mb-auto">Salsa is danced shifting the weight of the body from foot
+              to foot by stepping
+              in harmony with the music.So learn Ballet from best Salsero.
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="220" height="250" src="Dance2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-2 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-4 text-success">Dance Style</strong>
+            <h3 class="mb-1 fnt">Ballet</h3>
+            <p class="mb-auto">Ballet is an art form created by the movement of the human body.So great opportunity to
+              develop your Ballet Dance skills from the best Ballerina in Just Dance Academy.
+              <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="230" height="250" src="Dance3.jpg" alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-2 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-4 text-primary">Dance Style</strong>
+            <h3 class="mb-1 fnt">Contemporary</h3>
+            <p class="card-text mb-auto">Contemporary dance is a style of expressive dance that combines elements of
+              several dance genres including modern, jazz, lyrical and classical ballet.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="220" height="250" src="Dance5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-2 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-4 text-success">Dance Style</strong>
+            <h3 class="mb-1 fnt">Hip-Hop</h3>
+            <p class="mb-auto">Hip-hop dance is a range of street dance styles primarily performed to hip-hop music or
+              that have evolved as part of hip-hop culture.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="230" height="250" src="Dance6.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <!-- Subscribe me on Youtube
+https://bit.ly/3m9avif
+-->
+  <footer id="footer" class="footer-1">
+    <div class="main-footer widgets-dark typo-light" data-aos="fade-up" data-aos-duration="2000">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title" id="company">JUST DANCE<span></span></h5>
+              <p id="company2">We provide several professional,certified and intensive training programs for students
+                who are enthusiastic about dance and want to enrich their skills and make a career in the field of
+                dance.</p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title">Quick Links<span></span></h5>
+              <ul class="thumbnail-widget">
+                <li class="nps">
+                  <div class="thumb-content"><a href="#.">Get Started</a></div>
+                </li>
+                <li class="nps">
+                  <div class="thumb-content"><a href="#.">National Events</a></div>
+                </li>
+                <li class="nps">
+                  <div class="thumb-content"><a href="#.">International Events</a></div>
+                </li>
+                <li class="nps">
+                  <div class="thumb-content"><a href="#.">Social Activities</a></div>
+                </li>
+                <li class="nps">
+                  <div class="thumb-content"><a href="#.">News</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title">Get Started<span></span></h5>
+              <p id="company2">To get access to our Online Dancing tutorials and online workshops.</p>
+              <a class="btn" href="https://youtube.com" target="_blank">Subscribe Now</a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+
+            <div class="widget no-box">
+              <h5 class="widget-title">Connect with Us<span></span></h5>
+
+              <p><a href="/" title="glorythemes">JustDance.com</a></p>
+            </div>
+            <div class="social-menu">
+              <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100016082772876" target="_blank"><i
+                      class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/PranavS18421620/" target="_blank"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/pranav.shinde_16/" target="_blank"><i
+                      class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Just Dance Academy© 2021. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    });
+  </script>
+
+  <script>
+    var typed = new Typed('.auto-input', {
+      strings: ["Be in the Spotlight"],
+      typeSpeed: 80,
+      backSpeed: 80,
+      loop: true
+    });
+
+   function clicked(){
+     alert("You have signed up Successfully!")
+   }
+
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
