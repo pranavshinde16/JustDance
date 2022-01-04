@@ -257,3 +257,8 @@ transition: all 250ms ease-in-out 0s;
   .social-menu ul li:nth-child(5) a:hover {
       background-color: #0077B5;
   }
+
+#Maps{
+      align-items: center;
+      text-align: center;
+  }
